@@ -1,0 +1,17 @@
+<h1>Counted</h1>
+<a href="{% url "home" %}">Back</a>
+<h3>Your text</h3>	
+		{{fulltext}}
+
+<h3>Total number of words</h3>
+		total words = {{count}}
+
+<br/>
+{% for word,value in word_dic %}
+{{word}} = {{value}}
+<br>
+{% endfor %}
+<br/>
+
+<a href="{% url "about" %}">About</a>
+
